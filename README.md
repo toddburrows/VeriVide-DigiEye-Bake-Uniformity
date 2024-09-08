@@ -26,4 +26,19 @@ I created a visual representation of the grouping of the baked good by creating 
 
 <img width="851" alt="smallfullcaketogether" src="https://github.com/user-attachments/assets/52c24f91-9a00-4e05-95c2-bc91201dd744">
 
+An example of a cake and its corresponding index map visualisation.
+
+<img width="755" alt="dragontogether" src="https://github.com/user-attachments/assets/a78f720f-0d7f-46b0-87f1-1b369d3dbd36">
+
+An example of a biscuit and its corresponding index map visualisation.
+
 ## Representations
+
+### Arrows
+I first wrote an arrow representation, the idea was that there would be 3 arrows representing the 'under', 'good' and 'over' cooked regions. Each arrow would extend from the centre of the baked good to the centre of mass of their respective group (see appendix) and the width of the arrow would be proportional to the percentage of the baked good that lies in that group.
+
+#### Advantages
+
+#### Limitations and Improvements
+
+## Appendix
