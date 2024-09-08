@@ -33,9 +33,14 @@ An example of a cake and its corresponding index map visualisation.
 An example of a biscuit and its corresponding index map visualisation.
 
 ## Representations
+To accompany each of the below representations, I wrote an output to the user of a table representing the clusters and the percentage of the cake that falls in each cluster. An example of the output for the cake as shown above is,
+
+<img width="468" alt="table" src="https://github.com/user-attachments/assets/8328f4f7-d7e9-418b-a532-e674b2b97157">
 
 ### Arrows
 I first wrote an arrow representation, the idea was that there would be 3 arrows representing the 'under', 'good' and 'over' cooked regions. Each arrow would extend from the centre of the baked good to the centre of mass of their respective group (see appendix) and the width of the arrow would be proportional to the percentage of the baked good that lies in that group.
+
+<img width="628" alt="arrows" src="https://github.com/user-attachments/assets/2c1d8ee5-6f62-49a5-9e4e-bd3f191385f3">
 
 #### Advantages
 
