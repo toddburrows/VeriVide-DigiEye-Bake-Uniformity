@@ -55,7 +55,17 @@ One of the limitations of this representation is that if one side of the cake is
 An improvement that could be made is to use the visual centre of a region rather than the centre of mass of the region, this would not help in the example given above but would mean that for an overcooked region like the one for the cake above, the arrow would end within the crescent as opposed to its focal point.
 
 ### Bubbles
-As an alternative to the arrow representation, I also wrote the bubble representation.
+As an alternative to the arrow representation, I also wrote the bubble representation. Similar to the arrows, there would be 3 bubbles representing the 'under', 'good' and 'over' cooked regions. Each bubble would be centered at the centre of mass of their respective group (see appendix) and the radius of the bubble would be proportional to the percentage of the baked good that lies in that group.
+
+# INSERT IMAGE OF SMALLFULLCAKE.BMP WITH BUBBLES AND DRAGON.BMP WITH BUBBLES
+
+Again, similar to the arrow representation the centre of the baked good is calculated by finding its centre of mass, the regions are ordered by descending percentage of the baked good that lies in each group so that the largest bubble is drawn first and the smaller bubbles would sit on top of it. For each group the centre of mass is calculated, colour associated and radius calculated. The radius is calculated by using the percentage of the baked good that lies in that group and is scaked by a scale factor related to the size of the baked good so the bubble sizes are appropriate for the image. Each bubble is then drawn with a cross in the centre, also scaled by the scale factor and the radius of the bubble that encloses it. A small dot at the centre of the baked good is also plotted.
+
+### Advantages
+An advantage I found with this representation was that compared to the arrows, it was easier to distinguish the increase in the radius of a bubble than the increase in the width of an arrow, especially when an arrow width becomes thick and therefore less precision of its position due to that group taking up a large portion of the baked good. At first I didnt implement the final line of adding a point at the centre of the baked good, but with addition of this in a later iteration I found that it helped as a reference to distinguish where the bubbles were positioned on the baked good.
+
+### Limitations and Improvements
+I did find however that the bubbles are less intuative than the arrows, without explanation it is difficult to see what they are representing unlike the arrow which clearly point to an overcooked/undercooked/good region. Similar to the arrows, the use of a visual centre would better represent where the region the bubble is representing tends to lie.
 
 ## Overall Evaluation
 
