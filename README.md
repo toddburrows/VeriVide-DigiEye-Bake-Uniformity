@@ -39,12 +39,24 @@ To accompany each of the below representations, I wrote an output to the user of
 <img width="468" alt="table" src="https://github.com/user-attachments/assets/8328f4f7-d7e9-418b-a532-e674b2b97157">
 
 ### Arrows
-I first wrote an arrow representation, the idea was that there would be 3 arrows representing the 'under', 'good' and 'over' cooked regions. Each arrow would extend from the centre of the baked good to the centre of mass of their respective group (see appendix) and the width of the arrow would be proportional to the percentage of the baked good that lies in that group.
+I first wrote an arrow representation, the idea was that there would be 3 arrows representing the 'under', 'good' and 'over' cooked regions. Each arrow would extend from the centre of the baked good to the centre of mass of their respective group (see appendix) and the width of the arrow would be proportional to the percentage of the baked good that lies in that group. 
 
 <img width="628" alt="arrows" src="https://github.com/user-attachments/assets/2c1d8ee5-6f62-49a5-9e4e-bd3f191385f3">
 
+This is acheived by first calculating the centre of the baked good by finding its centre of mass. I then ordered the regions by descending percentage of the baked good that lies in each group, this is so that the largest group and therefore the widest arrow is drawn first so that, similar to a clock face, the smaller arrows sit on top of the larger ones.
+For each group 1-3, I calculated the centre of mass of each region, associated its respective colour (red - over, green - good, blue - under), calculated the length of the arrow (euclidean distance between centre of baked good and centre of mass of region) and calculated the arrow width which not only is proportional to the size of the baked good that lies in that group but is scaled by a scale factor related to the size of the baked good so the arrows are reasonably sized for every image. Finally I drew each arrow in its corresponding coloir using these calculated values, where I also scaled the arrow head length to be reasonably sized determined by the arrow length.
+
 #### Advantages
+The advantages I found with this representation was that it clearly shows to the user the centre of mass of each region, including how extreme this region is (i.e. how much this region is skewed over to one side of the baked good) by how long the arrow is and also portrays more information in a compact way with the arrow width being proportional to the percentage of the baked good that lies in that group. 
 
 #### Limitations and Improvements
+One of the limitations of this representation is that if one side of the cake is overcooked for example, and the opposite side is also overcooked, the centre of mass of the overcooked region would fall close to the centre implying a uniform bake of overcooked areas, failing to spot this patten of disuniformity. Also when a cake is uniform as desired, each arrow would have a small length as the centre of mass of each region would be close to the centre, this means that it is difficult to distinguish the arrows from each other or see them clearly as they are simply too small. 
+
+An improvement that could be made is to use the visual centre of a region rather than the centre of mass of the region, this would not help in the example given above but would mean that for an overcooked region like the one for the cake above, the arrow would end within the crescent as opposed to its focal point.
+
+### Bubbles
+As an alternative to the arrow representation, I also wrote the bubble representation.
+
+## Overall Evaluation
 
 ## Appendix
