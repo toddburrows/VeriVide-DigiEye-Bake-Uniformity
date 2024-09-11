@@ -10,6 +10,7 @@ There had been requests from customers of VeriVide Ltd for their DigiEye softwar
 1) Read an image that has been taken with VeriVide's DigiEye technology and process the data in order to segment the image and calculate the level of bake for each region across the baked good.
 2) Group similar colour values together using k-means clustering to section the baked good into 3 distinct groups - 'under', 'good' and 'over' cooked.
 3) Describe the uniformity and distribution of the bake using a variety of easily digestable visual representations of the level of bake across the baked good.
+4) Create a metric giving a single number to rate the uniformity of a bake, then test with real cakes baked by my collegues!
 
 ## Method
 ### Data/Image Processing
