@@ -61,11 +61,23 @@ As an alternative to the arrow representation, I also wrote the bubble represent
 
 Again, similar to the arrow representation the centre of the baked good is calculated by finding its centre of mass, the regions are ordered by descending percentage of the baked good that lies in each group so that the largest bubble is drawn first and the smaller bubbles would sit on top of it. For each group the centre of mass is calculated, colour associated and radius calculated. The radius is calculated by using the percentage of the baked good that lies in that group and is scaked by a scale factor related to the size of the baked good so the bubble sizes are appropriate for the image. Each bubble is then drawn with a cross in the centre, also scaled by the scale factor and the radius of the bubble that encloses it. A small dot at the centre of the baked good is also plotted.
 
-### Advantages
-An advantage I found with this representation was that compared to the arrows, it was easier to distinguish the increase in the radius of a bubble than the increase in the width of an arrow, especially when an arrow width becomes thick and therefore less precision of its position due to that group taking up a large portion of the baked good. At first I didnt implement the final line of adding a point at the centre of the baked good, but with addition of this in a later iteration I found that it helped as a reference to distinguish where the bubbles were positioned on the baked good.
+#### Advantages
+An advantage I found with this representation was that compared to the arrows, it was easier to distinguish the increase in the radius of a bubble than the increase in the width of an arrow, especially when an arrow width becomes thick and therefore has less precision of its position due to that group taking up a large portion of the baked good. At first I didnt implement the final line of adding a point at the centre of the baked good, but with addition of this in a later iteration I found that it helped as a reference to distinguish where the bubbles were positioned on the baked good.
 
-### Limitations and Improvements
+#### Limitations and Improvements
 I did find however that the bubbles are less intuative than the arrows, without explanation it is difficult to see what they are representing unlike the arrow which clearly point to an overcooked/undercooked/good region. Similar to the arrows, the use of a visual centre would better represent where the region the bubble is representing tends to lie.
+
+### Polygons
+The idea for this representation stemmed from an idea of the arrow representation but using rectangles and where instead of the width being proportional to the percentage of the baked good that lies in that group, the area is. This means that for a region with centre of mass far from the centre, the width of the rectangle could be smaller than the width of a rectangle representing a region with a smaller percentage of the baked good falling in that region but has a centre of mass closer to the centre of the baked good. The next iteration of this representation I included the use of squares, these would be used for when the rectangle representing the region would have a width > 0.75 x length. This is because when the width was large it was hard to tell the direction the rectangle is pointing in as when the width>length the rectangle would appear to almost point at right angles to the direction of the centre of mass. These squares would have area still equal to the area if it had been a rectangle, but is centered at the centre of mass point and is still orientated in the direction of the centre of mass point from the centre of the baked good. The last iteration then included the use of traingles used for when the 
+width < 10 x length, this aided the representation because with a very thin rectangle it was hard to see it clearly on the image, but the use of a triangle that fanned out to the centre of mass point meant that the width of the traingle at the centre of mass point was double that of if it was represented by a rectangle making it more easily perceivable.
+
+# INSERT IMAGE OF SMALLFULLCAKE.BMP WITH POLYGONS and DRAGON.BMP WITH POLYGONS
+
+# EXPLAIN HOW IT WAS DONE
+
+#### Advantages
+
+#### Limitations and Improvements
 
 ## Overall Evaluation
 
