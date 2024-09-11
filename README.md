@@ -38,6 +38,8 @@ To accompany each of the below representations, I wrote an output to the user of
 
 <img width="468" alt="table" src="https://github.com/user-attachments/assets/8328f4f7-d7e9-418b-a532-e674b2b97157">
 
+---
+
 ### Arrows
 I first wrote an arrow representation, the idea was that there would be 3 arrows representing the 'under', 'good' and 'over' cooked regions. Each arrow would extend from the centre of the baked good to the centre of mass of their respective group (see appendix) and the width of the arrow would be proportional to the percentage of the baked good that lies in that group. 
 
@@ -54,6 +56,8 @@ One of the limitations of this representation is that if one side of the cake is
 
 An improvement that could be made is to use the visual centre of a region rather than the centre of mass of the region, this would not help in the example given above but would mean that for an overcooked region like the one for the cake above, the arrow would end within the crescent as opposed to its focal point.
 
+---
+
 ### Bubbles
 As an alternative to the arrow representation, I also wrote the bubble representation. Similar to the arrows, there would be 3 bubbles representing the 'under', 'good' and 'over' cooked regions. Each bubble would be centered at the centre of mass of their respective group (see appendix) and the radius of the bubble would be proportional to the percentage of the baked good that lies in that group.
 
@@ -67,6 +71,8 @@ An advantage I found with this representation was that compared to the arrows, i
 #### Limitations and Improvements
 I did find however that the bubbles are less intuative than the arrows, without explanation it is difficult to see what they are representing unlike the arrow which clearly point to an overcooked/undercooked/good region. Similar to the arrows, the use of a visual centre would better represent where the region the bubble is representing tends to lie.
 
+---
+
 ### Polygons
 The idea for this representation stemmed from an idea of the arrow representation but using rectangles and where instead of the width being proportional to the percentage of the baked good that lies in that group, the area is. This means that for a region with centre of mass far from the centre, the width of the rectangle could be smaller than the width of a rectangle representing a region with a smaller percentage of the baked good falling in that region but has a centre of mass closer to the centre of the baked good. The next iteration of this representation I included the use of squares, these would be used for when the rectangle representing the region would have a width > 0.75 x length. This is because when the width was large it was hard to tell the direction the rectangle is pointing in as when the width>length the rectangle would appear to almost point at right angles to the direction of the centre of mass. These squares would have area still equal to the area if it had been a rectangle, but is centered at the centre of mass point and is still orientated in the direction of the centre of mass point from the centre of the baked good. The last iteration then included the use of traingles used for when the 
 width < 10 x length, this aided the representation because with a very thin rectangle it was hard to see it clearly on the image, but the use of a triangle that fanned out to the centre of mass point meant that the width of the traingle at the centre of mass point was double that of if it was represented by a rectangle making it more easily perceivable.
@@ -78,6 +84,8 @@ width < 10 x length, this aided the representation because with a very thin rect
 #### Advantages
 
 #### Limitations and Improvements
+
+---
 
 ## Overall Evaluation
 
