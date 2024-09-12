@@ -61,7 +61,7 @@ An improvement that could be made is to use the visual centre of a region rather
 ### Bubbles
 As an alternative to the arrow representation, I also wrote the bubble representation. Similar to the arrows, there would be 3 bubbles representing the 'under', 'good' and 'over' cooked regions. Each bubble would be centered at the centre of mass of their respective group (see appendix) and the radius of the bubble would be proportional to the percentage of the baked good that lies in that group.
 
-# INSERT IMAGE OF SMALLFULLCAKE.BMP WITH BUBBLES AND DRAGON.BMP WITH BUBBLES
+<img width="699" alt="bubblestogether" src="https://github.com/user-attachments/assets/066aa736-e6cf-454a-beff-99409d6c0291">
 
 Again, similar to the arrow representation the centre of the baked good is calculated by finding its centre of mass, the regions are ordered by descending percentage of the baked good that lies in each group so that the largest bubble is drawn first and the smaller bubbles would sit on top of it. For each group the centre of mass is calculated, colour associated and radius calculated. The radius is calculated by using the percentage of the baked good that lies in that group and is scaked by a scale factor related to the size of the baked good so the bubble sizes are appropriate for the image. Each bubble is then drawn with a cross in the centre, also scaled by the scale factor and the radius of the bubble that encloses it. A small dot at the centre of the baked good is also plotted.
 
