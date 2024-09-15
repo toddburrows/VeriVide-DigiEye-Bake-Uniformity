@@ -94,6 +94,28 @@ The main advantage I feel that this representation has over the previous is that
 #### Limitations and Improvements
 Where this representation is limited is in the ability to distinguish between the percentage of the pixels that fall into one region compared to another if they are represented by different polygons - it is difficult for one to tell which area is greater between the area of a square and the area of a triangle when their difference is not great. Again, the use of the visual centre as opposed to the centre of mass could give a more intuative end location/centre for each region's ploygon.
 
+---
+
+### Radial Sectors Graph
+
+#### Advantages
+
+#### Limitations and Improvements
+
+---
+
+### Radial Regions Graph
+
+### Advantages
+
+#### Limitations and Improvements
+
+---
+
+## The Uniformity Rating
+
 ## Overall Evaluation
 
 ## Appendix
+How to find centre of mass of region.
+How to calculate brownness of radial sectors.
