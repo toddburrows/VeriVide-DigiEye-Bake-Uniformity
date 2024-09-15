@@ -78,7 +78,13 @@ The idea for this representation stemmed from an idea of the arrow representatio
 
 <img width="643" alt="polygonstogether" src="https://github.com/user-attachments/assets/cc1f8681-8181-4ca0-9722-02a68a4222c1">
 
-# EXPLAIN HOW IT WAS DONE
+As before, the centre of the baked good and its area is found first. The regions are ordered so that when drawing the polygons the polygon with the largest area is drawn first. Then for each region, the associated colour is selected and the centre of mass for that region is calculated. First assuming that this region will be represented by a rectangle the rectangle length, i.e. the distance between the centre of the baked good and centre of mass of that region is calculated. The area of the rectangle is also calculated using the percentage of the baked good that falls in that region and is multiplied by a calculated scale factor so that the polygons are of reasonable size for the baked good inspected. The width of this rectangle is then calculated allowing the conditions above to be checked determining what polygon to use to represent each region.
+
+1) In the case of a traingle - the triangle's area and height is the same as the rectangle's area and length and the base is twice the width of the rectangle's width. Using the trigonometry below the x and y increment from the centre of mass point to the two base vertices are calculated, allowing the calculation of these vertices.
+2) In the case of a rectangle - the trigonometry below is used to calculate the x and y increment from the centre of the shorter sides to their endpoints (i.e. centre of mass point to upper 2 vertices, centre of baked good to lower 2 vertices), allowing the 4 vertices of the rectangle to be calculated.
+3) In the case of a square - the square's area is equal to the rectangle's area, and its length/width is equal to the square root of this area. Using the trigonometry below the vertices of the square are calculated one by one for x and for y.
+
+The polygons are then drawn with the alpha channel being set to one half so that the fill colour is translucent, a point at the centre of the baked good is also drawn.
 
 #### Advantages
 
