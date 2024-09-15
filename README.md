@@ -97,6 +97,12 @@ Where this representation is limited is in the ability to distinguish between th
 ---
 
 ### Radial Sectors Graph
+This representation deviates from inspecting the uniformity of the baked good only by the distribution of the pixels falling into the 3 seperate 'under', 'good' and 'over' cooked groups, instead for this representation we split the cake into 8 sectors and inspect the brownness values of the pixels in each sector giving an average brownness in multiple regions around the cake. This allows the user to see the uniformity of the bake by the level at which the baked good is cooked in different areas over its cross-section. The greater the average brownness of the sector, the greater the sector shaped bar's radius is (similar to a bar chart but circular). 
+
+<img width="403" alt="Picture 1" src="https://github.com/user-attachments/assets/cb00bf9d-ee12-4096-a7e2-a571e7de4ead">
+
+
+
 
 #### Advantages
 
