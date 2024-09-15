@@ -97,20 +97,26 @@ Where this representation is limited is in the ability to distinguish between th
 ---
 
 ### Radial Sectors Graph
-This representation deviates from inspecting the uniformity of the baked good only by the distribution of the pixels falling into the 3 seperate 'under', 'good' and 'over' cooked groups, instead for this representation we split the cake into 8 sectors and inspect the brownness values of the pixels in each sector giving an average brownness in multiple regions around the cake. This allows the user to see the uniformity of the bake by the level at which the baked good is cooked in different areas over its cross-section. The greater the average brownness of the sector, the greater the sector shaped bar's radius is (similar to a bar chart but circular). 
+This representation deviates from inspecting the uniformity of the baked good only by the distribution of the pixels falling into the 3 seperate 'under', 'good' and 'over' cooked groups, instead for this representation we split the baked good into 8 sectors and inspect the brownness values of the pixels in each sector giving an average brownness in multiple regions around the baked good. This allows the user to see the uniformity of the bake by the level at which the baked good is cooked in different areas over its cross-section. The greater the average brownness of the sector, the greater the sector shaped bar's radius is (similar to a bar chart but circular). 
 
 <img width="403" alt="Picture 1" src="https://github.com/user-attachments/assets/cb00bf9d-ee12-4096-a7e2-a571e7de4ead">
 
-
-
+The centre of the baked good is found first, along with its area. We assume the baked good to be a circle for this representation so the radius of the baked good is the square root of its area. The radius is then checked to make sure that it does not exceed the dimensions of the image, if it does then the minimum distance between the centre and the edge of the image is taken to be the radius. A horizontal and vertical line with their centre being the centre of the baked good is drawn, with length equal to the diameter of the baked good, two positive and negative diagonal lines are drawn in this way too, an outer circle is also drawn. Then for each region, starting at the positive x axis moving anticlockwise the brownness for every pixel in the region is taken (see appendix) and the average of the sector is found (the first sector includes the centre point and the x axis and every subsequent sector includes the line that seperates it from the previous sector). The maxBrownness is set by the user, this decides the brownness at which the bar would reach the edge of the cake, if 'half' is given the maxBrownness is equal to the maximum brownness of a pixel on the baked good, if 'full' is given the sector with the greatest average brownness will take up its whole region. The sectors are then drawn with a greyscale where the lightest grey is given to the sector with the lowest average brownness.
 
 #### Advantages
+The advantage of this representation is the ability to inspect particular regions on the baked good to see if there is some sort of hotspots or coolspots in the heating device the user is using where the baked good is not as cooked/brown. Also by not splitting the baked good into just 3 groups there is the ability to compare the brownness more precisely between regions. 
 
 #### Limitations and Improvements
+The limitation though is that the use of a polar format limits the ability to inspect scales on the cartesian axis, for example if there is a horizontal hotspot across the centre of the baked good, this would go unnoticed under the radial sectors graph as each sector would increase in average brownness by a similar amount with sectors 8 and 1 and sectors 4 and 5 increasing slightly more due to their orientation but this would still be difficult to notice.
 
 ---
 
 ### Radial Regions Graph
+This representation was created to offer a similar representation to the radial sectors graph above but for a baked good that is rectangular as opposed to circular. Instead the baked good is split into 9 rectangles in a 3x3 grid formation with each rectangle roughly equal height and equal width, the brownness values of the pixels in each region is then inspected to give an average brownness value for each region. The representation can then be displayed in 2 ways, either with central increasing squares or with rectangles similar to a bar chart. When represented with rectangles the greater the average brownness of the region the greater the height of the bar in each region. When represented with central increasing squares the greater the average brownness of the region the greater the radius of a square centered at the centre of the region is in each region.
+
+<img width="527" alt="image" src="https://github.com/user-attachments/assets/2d417f6a-3aec-4cac-9e6f-56c2fbc61b3d">
+
+Once again the centre of the baked good is found, 
 
 ### Advantages
 
