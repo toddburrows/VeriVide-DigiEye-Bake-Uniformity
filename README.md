@@ -89,10 +89,10 @@ As before, the centre of the baked good and its area is found first. The regions
 The polygons are then drawn with the alpha channel being set to one half so that the fill colour is translucent, a point at the centre of the baked good is also drawn.
 
 #### Advantages
+The main advantage I feel that this representation has over the previous is that as little as just the polygons used and their location for each region conveys a lot of information, with a quick glimpse; if there are 3 squares centered near the centre of the baked good then the bake is reasonably uniform, if there are two large rectangles and one square then the bake is not very uniform. In addition to this it still conveys the same information as in the arrow and bubble representation.
 
 #### Limitations and Improvements
-
----
+Where this representation is limited is in the ability to distinguish between the percentage of the pixels that fall into one region compared to another if they are represented by different polygons - it is difficult for one to tell which area is greater between the area of a square and the area of a triangle when their difference is not great. Again, the use of the visual centre as opposed to the centre of mass could give a more intuative end location/centre for each region's ploygon.
 
 ## Overall Evaluation
 
