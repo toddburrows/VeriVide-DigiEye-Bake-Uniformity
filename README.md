@@ -146,6 +146,14 @@ In light of both of these evaluations I deemed that the most valuable representa
 
 Another use for the radial sectors and radial regions graphs are the ability for the user to set the same standard maxBrownness benchmark for representing different images, so that two sectors/regions on two different images will take up the same amount of space on the baked good if their brownness is equal. This allows for comaparisons between two different images. This would allow for example a user to test the same mixture on two different shelves of their oven to test the uniformity of the heat of their oven. Or the user could be responsible for testing the food product itself rather than the heating appliance, so they use two different mixtures on the same shelf in the same oven at the same temperature for the same time and compare the results side by side.
 
+<img width="720" alt="image" src="https://github.com/user-attachments/assets/3dd3d13d-3f41-4c96-8ddd-3208e342fa5d">
+
+Comparing two different circular cookies with the same maxBrownness benchmark.
+
+<img width="624" alt="image" src="https://github.com/user-attachments/assets/38f9f379-916a-453d-849e-f74d3d94671c">
+
+Comparing two different rectangular biscuits with the same maxBrownness benchmark.
+
 The user/customer of VeriVide's DigiEye technology now no longer needs to annotate the image themselves, saving time for business critical areas and preventing the risk of human error. Now there is an automated solution to represent the bake uniformity of their bakes with is quick and repeatable saving time and money.
 
 ## Appendix
