@@ -157,5 +157,6 @@ Comparing two different rectangular biscuits with the same maxBrownness benchmar
 The user/customer of VeriVide's DigiEye technology now no longer needs to annotate the image themselves, saving time for business critical areas and preventing the risk of human error. Now there is an automated solution to represent the bake uniformity of their bakes with is quick and repeatable saving time and money.
 
 ## Appendix
-How to find centre of mass of region.
+
+### Centre Of Mass Of A K-means Group
 How to calculate brownness of radial sectors.
