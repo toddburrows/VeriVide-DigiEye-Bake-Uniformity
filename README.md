@@ -116,15 +116,24 @@ This representation was created to offer a similar representation to the radial 
 
 <img width="527" alt="image" src="https://github.com/user-attachments/assets/2d417f6a-3aec-4cac-9e6f-56c2fbc61b3d">
 
-Once again the centre of the baked good is found, 
+Once again the centre of the baked good is found, including finding the maximum and minimum x and y values i.e. the border of the baked good. The length of the vertical lines is found with subtracting the minimum y position from the maximum, and the same with the horizontal line with the minimum and maximum x. The height and width are then divided by 3, and the remainders are found - with remainder 0 all heights/widths will be the same, with remainder 1 the bottom/right boxes will be 1 greater and with remainder 2 the middle and bottom/middle and right boxes will be 1 greater. The lines are then drawn and using these lines the brownness values of the pixels within each regions boundaries are found with an average brownness for that region calculated. The maxBrownness is set by the user, this decides the brownness at which the squares would fill their region, if 'half' is given the maxBrownness is equal to the maximum brownness of a pixel on the baked good, if 'full' is given the sector with the greatest average brownness will fill its region. Squares are then drawn from the centre of each region with their radius proportional to the percentage of the sample within that region, their colour is a greyscale with the lightest grey given to the region with the lowest brownness value and the transulency set to one half.
 
 ### Advantages
+The advantages of this representation are that of the radial sectors graph but with a baked good that is rectangular. In addition though because of the use of a central 9th region there is the ability to notice a vertical, horizontal or diagonal scale unlike in the radial sectors graph. 
 
 #### Limitations and Improvements
+A limitation though is the difficulty in seeing the image underneath the representation, unlike the radial sectors graph which fans out to a certain radius, this representation occupies all areas of the baked good taking up different regions by differing amounts. Also an improvement that needs to be made is that the regions will unlikely be squares, but with the central increasing squares representation squares are being used to represent each region so if they grow to a certain size their length/width will exceed one of the dimensions.
 
 ---
 
 ## The Uniformity Rating
+The uniformity rating is a measure I developed to give a single number rating the uniformity of a bake, it is calculated in two parts with the average taken to give the overall rating. The first rating is the arrow rating, used for measuring the distribution of the 'under', 'good' and 'over' cooked groups. The second rating is the graph rating, used for measuring the variance of the bake.
+
+### The Arrow Rating
+To calculate the arrow rating the arrow representation calculations are performed as normal, but without displaying the representation. First the distance between the endpoint of the under cooked arrow and the endpoint of the over cooked arrow is calculated, this distance is divided by twice the radius of the baked good (where the radius is the radius of the baked good itself or the minimum distance between the centre of the baked good and the edge of the image) to give a percentage of the baked good it takes up. This is subtracted from 1 to give the first part of the rating. The second part of the rating is the distance between the centre of the baked good and the endpoint of the good cooked arrow divided by the above radius of the baked good an subtracted from 1. The average of these two ratings gives the arrow rating.
+
+### The Graph Rating
+To calculate the graph rating either the radial sectors graph representation or the radius regions graph representation calculations are performed as normal, but without displaying the representation, which one is determined by the shape of the baked good which is given as a parameter. The brownness of the sector/region with the greatest average brownness value is taken and the brownness of the sector/region with the lowest average brownness value is taken and the percentage difference is calculated but divided by 100 for decimal difference, then subtracted from 1 to give the graph rating.
 
 ## Overall Evaluation
 
