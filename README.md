@@ -158,5 +158,13 @@ The user/customer of VeriVide's DigiEye technology now no longer needs to annota
 
 ## Appendix
 
-### Centre Of Mass Of A K-means Group
-How to calculate brownness of radial sectors.
+### Centre Of Mass Of A Group
+To find the centre of mass of a group that has been grouped by the k-means algorithm the image size is found first and used to loop across the pixels documenting the x and y position of each pixel belonging to the specified group. The x and y positions are summed and divided by the number of pixels that fall into that group, this gives the average x and average y position which is the centre of mass of the specified group.
+
+### Brownness Of Radial Sectors
+The sectors are ordered 1-8 from the positive x-axis anticlockwise. To ensure that there are no pixels that are included in multiple regions, the centre point is included only by sector 1, and then each sector includes the line that defines it in the clockwise direction. An example of three sectors and what area they include are given below, these diagrams using an example 490x470 image were what I used to determine the limits of the x values for each region, and the limits of the y values for every x for each region.
+
+![image](https://github.com/user-attachments/assets/421b4d7e-7d90-40fd-90f5-3e1f7dd88e1e)
+
+Sectors 4, 5 and 8 are shown above.
+
