@@ -11,6 +11,13 @@ Once all the cakes were imaged I then had to put them through my code to create 
 <img width="498" alt="image" src="https://github.com/user-attachments/assets/f03c862e-ac4a-493d-9684-1e2151d33c90">
 <img width="503" alt="image" src="https://github.com/user-attachments/assets/1cf9dd5f-2556-41cc-a5d8-3df0250e833e">
 
+This cake was given an arrow rating of 93.07% and a graph rating of 88.57% giving an overall rating of 90.82%.
+
+A rectangular cake demonstrating the radial regions graph with rectangles and central increasing squares.
+
+<img width="879" alt="image" src="https://github.com/user-attachments/assets/7afe2d9c-7041-4596-9d5b-6abcf0d4bce1">
+
+This cake was given an arrow rating of 98.99% and a graph rating of 93.10% giving an overall rating of 96.05% which won the competition as my code determined it to be the most uniform. This was an interesting result because on inspection you can observe the outer edge of the cake is more cooked than the middle of the cake, this perhaps highlights a weakness in my code of failing to highlight bakes that are non-uniform by concentric circles of differing brownness, as their centre of mass will still converge around the centre. This could be combatted with the use of the visual centre as opposed to the centre of mass, this would mean that the arrow, bubble and polygon representations would give different visual representations of the centre of each region potentionally highlighting this issue with a large arrow/bubble centered far from the origin/polygon ending or centered far from the origin. The ['Rvision' package](https://swarm-lab.github.io/Rvision/) could be used to implement this using its functions to detect contours based on the powerful OpenCV libary for C/C++.
 
 ## The Assignment Abstract
 There had been requests from customers of VeriVide Ltd for their DigiEye software to provide details about the colour uniformity of their baked goods. An automated solution that would describe the bake distribution across the baked good would provide the customer with a valuable insight into the quality of the current baking process. A solution that would be able to segment an image and group similar colour values together into regions in order to provide the customer with a description of the spatial breakdown of these regions in an easily digestable way meant that the customer would be able to focus on business-critical areas as opposed to having to annotate the image themselves, which was the current solution. Also a software based solution would ensure that the process was repeatable and eliminate the chance of human error.
