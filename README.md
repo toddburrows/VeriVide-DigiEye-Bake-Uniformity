@@ -6,7 +6,9 @@ On the final week of my placement, with the directors I organised a 'Great VeriV
 
 <img width="900" alt="image" src="https://github.com/user-attachments/assets/48412320-a987-4bbb-b898-461c62a5b464">
 
-Once all the cakes were imaged
+Once all the cakes were imaged I then had to put them through my code to create the representations.
+
+<img width="501" alt="image" src="https://github.com/user-attachments/assets/e9f5f5c2-ae62-478b-867d-b7f200dc5f32">
 
 ## The Assignment Abstract
 There had been requests from customers of VeriVide Ltd for their DigiEye software to provide details about the colour uniformity of their baked goods. An automated solution that would describe the bake distribution across the baked good would provide the customer with a valuable insight into the quality of the current baking process. A solution that would be able to segment an image and group similar colour values together into regions in order to provide the customer with a description of the spatial breakdown of these regions in an easily digestable way meant that the customer would be able to focus on business-critical areas as opposed to having to annotate the image themselves, which was the current solution. Also a software based solution would ensure that the process was repeatable and eliminate the chance of human error.
