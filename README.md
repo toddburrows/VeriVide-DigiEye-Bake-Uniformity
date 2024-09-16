@@ -4,10 +4,9 @@ A project I completed on my 4 week summer placement with VeriVide Ltd. The proje
 ## Outcome
 On the final week of my placement, with the directors I organised a 'Great VeriVide Bake Off' where my colleagues were invited to bring in any kind of baked goods so that they could be imaged with VeriVide's DigiEye techonology and then the bake uniformity of the baked good be inspected using the representations produced by my software and rated according to my overall rating calculation. There were 11 baked goods submitted, some were a collection of biscuits where 6 were chosen to be imaged with the average rating of these 6 taken as the baked good's rating. 2 cakes submitted were too large for the smaller DigiEye and had to be imaged under the larger DigiEye.
 
-<img width="881" alt="image" src="https://github.com/user-attachments/assets/ed077234-0597-481f-a575-cf8574ab032e">
+<img width="900" alt="image" src="https://github.com/user-attachments/assets/48412320-a987-4bbb-b898-461c62a5b464">
 
 Once all the cakes were imaged
-
 
 ## The Assignment Abstract
 There had been requests from customers of VeriVide Ltd for their DigiEye software to provide details about the colour uniformity of their baked goods. An automated solution that would describe the bake distribution across the baked good would provide the customer with a valuable insight into the quality of the current baking process. A solution that would be able to segment an image and group similar colour values together into regions in order to provide the customer with a description of the spatial breakdown of these regions in an easily digestable way meant that the customer would be able to focus on business-critical areas as opposed to having to annotate the image themselves, which was the current solution. Also a software based solution would ensure that the process was repeatable and eliminate the chance of human error.
